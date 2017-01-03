@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 购买商品item布局 -->
+<FrameLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+   android:layout_height="wrap_content"
+   android:background="@drawable/gridview_item_selector" >
+<RelativeLayout
+    android:id="@+id/rl_aisleproduct_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/corner_white_bg"
+    android:orientation="vertical" >
+    <RelativeLayout 
+        android:id="@+id/rl_aisleproduct_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/imv_aisleproduct"
+        android:layout_width="88dp"
+        android:layout_height="96dp"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:contentDescription="@string/app_name" 
+        android:src="@drawable/imv_aisleproduct_noexist" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_aisleproduct_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/rl_aisleproduct_img"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txtSize_small" 
+        android:background="@drawable/corner_red_bottom_bg"/>
+	</RelativeLayout>
+	<RelativeLayout
+        android:id="@+id/rl_aisleproduct_soldout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/no_product"
+        android:visibility="gone">
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <com.evangeline.exviewpager.widget.CustomGridView
+		android:id="@+id/gdview_fragment_item"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:horizontalSpacing="12dip"  
+		android:verticalSpacing="12dip"  
+		android:gravity="center"  
+		android:numColumns="5"
+		android:columnWidth="136dip"
+		android:stretchMode="columnWidth"
+		android:descendantFocusability="blocksDescendants"
+		android:listSelector="@drawable/gridview_item_selector"
+	/>
+</LinearLayout>
